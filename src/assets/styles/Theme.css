@@ -1,0 +1,87 @@
+.light_theme {
+    background: linear-gradient(180deg, aqua -10%, #FFFFFFF2 5%);
+    background: linear-gradient(180deg, aquamarine -3%, transparent 19%);
+}
+
+.light_theme .navbar_links {
+    background-color: #7fffd41c;
+
+    & a {
+        color: #2E5077;
+    }
+}
+
+.light_theme .nav_btn_theme {
+    border-color: #4DA1A9;
+}
+
+.light_theme .nav_btn_theme:hover {
+    background-color: #4da1a93d;
+}
+
+.light_theme .hd_content {
+    color: #04364A;
+
+    & h1:first-child,
+    span {
+        color: #176B87;
+    }
+}
+
+.light_theme .hd_btns {
+    outline: 2px solid #4DA1A9;
+    color: #1E686F;
+}
+
+.light_theme .hd_btns:hover {
+    box-shadow: 0px 3px 0px 0px #4DA1A9;
+}
+
+.light_theme .subtitles {
+    color: #04364A;
+}
+
+.light_theme .card_experience {
+    box-shadow: 0 4px 20px #176B873B;
+}
+
+.light_theme .card_tools {
+    background: #f0fffffc;
+    background: white;
+}
+
+.light_theme .card_tools {
+    position: relative;
+
+    & h3 {
+        color: #4DA1A9;
+        background: linear-gradient(0deg, #2E5077 5%, #4DA1A9 40%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.light_theme .card_tools::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6.5px;
+    background: linear-gradient(0deg, #2E5077 20%, #4DA1A9 55%);
+    clip-path: inset(3px round 15px);
+    z-index: -1;
+}
+
+.light_theme .card_project {
+    box-shadow: 0 0 12px #176B873B;
+
+    & h4 {
+        color: #2E5077;
+    }
+}
+
+.light_theme .proj_target {
+    color: #4DA1A9;
+}
