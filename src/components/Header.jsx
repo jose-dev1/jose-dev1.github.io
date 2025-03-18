@@ -13,7 +13,7 @@ function Header() {
         <a href="#about">Acerca de mí</a>
       </nav>
 
-      <section className='col-lg-12 hd_presentation'>
+      <section className='col-lg-12 hd_presentation '>
         <h1>Desarrollador de Software</h1>
         <h1>Jose Castaño</h1>
         <span>Desarrollador Full Stack</span>

@@ -44,6 +44,7 @@
 }
 
 .hd_presentation {
+    margin-top: 150px;
     text-align: center;
 
     & h1 {

@@ -46,7 +46,6 @@ function Projects() {
           >
             <span className="proj_target">React</span>
             <span className="proj_target">TypeScript</span>
-            <span className="proj_target">Ant Desing</span>
             <span className="proj_target">NestJs</span>
             <span className="proj_target">MySQL</span>
           </Card>
@@ -75,13 +74,12 @@ function Projects() {
       </section>
 
       <footer className="row" id='contact'>
-        <code className='text-center mt-4 text-secondary fs-8'>
+        <code className='text-center mt-4 text-secondary fs-8 text-white'>
          Jose Castaño - © 2025
         </code>
       </footer>
 
     </article>
-    
   )
 }
 
