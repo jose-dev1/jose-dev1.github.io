@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, lazy } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -9,40 +9,43 @@ import './assets/styles/Skill.css'
 import './assets/styles/Projects.css'
 import './assets/styles/About.css'
 
-import Header from './components/Header'
-import Experience from './components/Experience'
-import Skills from './components/Skill'
-import Projects from './components/Projects'
-import AboutMe from './components/About'
+const Header = lazy(() => import('./components/Header'));
+const Experience = lazy(() => import('./components/Experience'));
+const Skills = lazy(() => import('./components/Skill'));
+const Projects = lazy(() => import('./components/Projects'));
+const AboutMe = lazy(() => import('./components/About'));
 
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 800,
       once: true,
-      easing: 'ease-in-out',  
+      easing: 'ease-out-cubic',
+      throttleDelay: 100,
+      mirror: false,
     });
   }, []);
 
   return (
-    <main className='container-lg cont_main '>
-      <div data-aos="fade-down">
-        <Header />
-      </div>
-      <div data-aos="fade-right">
-        <AboutMe />
-      </div>
-      <div data-aos="zoom-in-up">
-        <Experience />
-      </div>
-      <div data-aos="fade-down">
-        <Skills />
-      </div>
-      <div data-aos="fade-down">
-        <Projects />
-      </div>
+    <main className='container-lg cont_main'>
+        <div data-aos="fade-up">
+          <Header />
+        </div>
+        <div data-aos="fade-up">
+          <AboutMe />
+        </div>
+        <div data-aos="zoom-in">
+          <Experience />
+        </div>
+        <div data-aos="fade-up">
+          <Skills />
+        </div>
+        <div data-aos="fade-up">
+          <Projects />
+        </div>
+      
     </main>
-  )
+  );
 }
 
 export default App;
