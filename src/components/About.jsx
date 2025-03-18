@@ -18,7 +18,7 @@ function AboutMe() {
 
       <footer className="row" id='contact'>
         <section className='col-lg-12 mb-3'>
-          < DownloadCV text={"Descargar CV"} />
+          < DownloadCV className="text-bg-light" text={"Descargar CV"} />
         </section>
       </footer>
     </>

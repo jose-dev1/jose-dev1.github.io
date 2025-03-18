@@ -1,5 +1,5 @@
 import linkedinIcon from '../assets/icons/linkedin.svg'
-import githubIcon from '../assets/icons/github.svg'
+import githubIcon from '../assets/icons/github-white.svg'
 
 
 function Header() {

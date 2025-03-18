@@ -1,65 +1,93 @@
 .light_theme {
-    background: linear-gradient(180deg, aqua -10%, #FFFFFFF2 5%);
-    background: linear-gradient(180deg, aquamarine -3%, transparent 19%);
+    background: linear-gradient(180deg, #0B132B 0%, #1C2541 40%, #3A506B 100%);
+    color: #E0F7FA;
 }
 
 .light_theme .navbar_links {
-    background-color: #7fffd41c;
+    background-color: rgba(12, 23, 46, 0.85);
+    backdrop-filter: blur(4px);
 
     & a {
-        color: #2E5077;
+        color: #5BC0BE;
+        font-weight: bold;
+    }
+
+    & a:hover {
+        color: #3DCCC7;
     }
 }
 
 .light_theme .nav_btn_theme {
-    border-color: #4DA1A9;
+    border-color: #3DCCC7;
+    color: #3DCCC7;
+    background-color: transparent;
+    transition: all 0.3s;
 }
 
 .light_theme .nav_btn_theme:hover {
-    background-color: #4da1a93d;
+    background-color: rgba(61, 204, 199, 0.2);
+    box-shadow: 0 0 12px rgba(61, 204, 199, 0.4);
 }
 
 .light_theme .hd_content {
-    color: #04364A;
+    color: #E0F7FA;
 
     & h1:first-child,
     span {
-        color: #176B87;
+        color: #5BC0BE;
     }
 }
 
 .light_theme .hd_btns {
-    outline: 2px solid #4DA1A9;
-    color: #1E686F;
+    outline: 2px solid #3DCCC7;
+    color: #3DCCC7;
+    border-radius: 10px;
+    background: transparent;
+    transition: all 0.3s;
 }
 
 .light_theme .hd_btns:hover {
-    box-shadow: 0px 3px 0px 0px #4DA1A9;
+    background-color: rgba(61, 204, 199, 0.2);
+    box-shadow: 0px 4px 12px rgba(61, 204, 199, 0.5);
+    transform: translateY(-2px);
 }
 
 .light_theme .subtitles {
-    color: #04364A;
+    color: #A9D6E5;
 }
 
 .light_theme .card_experience {
-    box-shadow: 0 4px 20px #176B873B;
+    background: rgba(22, 30, 50, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
 }
 
-.light_theme .card_tools {
-    background: #f0fffffc;
-    background: white;
+.light_theme .card_experience:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
 }
 
 .light_theme .card_tools {
     position: relative;
+    background: rgba(20, 27, 45, 0.95);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
 
     & h3 {
-        color: #4DA1A9;
-        background: linear-gradient(0deg, #2E5077 5%, #4DA1A9 40%);
+        color: #3DCCC7;
+        background: linear-gradient(0deg, #5BC0BE 5%, #3DCCC7 40%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+}
+
+.light_theme .card_tools:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
 }
 
 .light_theme .card_tools::before {
@@ -69,19 +97,29 @@
     left: -6px;
     right: -6px;
     bottom: -6.5px;
-    background: linear-gradient(0deg, #2E5077 20%, #4DA1A9 55%);
-    clip-path: inset(3px round 15px);
+    background: linear-gradient(135deg, #3DCCC7 20%, #5BC0BE 55%);
+    clip-path: inset(4px round 15px);
     z-index: -1;
+    opacity: 0.4;
 }
 
 .light_theme .card_project {
-    box-shadow: 0 0 12px #176B873B;
+    background: rgba(22, 30, 50, 0.92);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s;
 
     & h4 {
-        color: #2E5077;
+        color: #5BC0BE;
     }
 }
 
+.light_theme .card_project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
 .light_theme .proj_target {
-    color: #4DA1A9;
+    color: #3DCCC7;
 }
